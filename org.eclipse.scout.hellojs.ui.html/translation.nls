@@ -3,4 +3,4 @@
 # To ensure a properly working nls support of    #
 # keep this file untouched directly.             #
 ##################################################
-Nls-Class=org.eclipse.scout.hellojs.ui.html.hellojsTextProviderService
+Nls-Class=org.eclipse.scout.hellojs.ui.html.HelloJsTextProviderService
