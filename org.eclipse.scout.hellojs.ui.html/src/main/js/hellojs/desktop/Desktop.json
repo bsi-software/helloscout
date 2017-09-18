@@ -1,0 +1,13 @@
+{
+  "id": "hellojs.Desktop",
+  "objectType": "Desktop",
+  "type": "model",
+  "navigationVisible": false,
+  "navigationHandleVisible": false,
+  "headerVisible": false,
+  "views": [
+    {
+      "objectType": "hellojs.HelloForm"
+    }
+  ]
+}

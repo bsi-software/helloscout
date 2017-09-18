@@ -1,0 +1,30 @@
+{
+  "id": "hellojs.HelloForm",
+  "type": "model",
+  "displayHint": "view",
+  "modal": false,
+  "rootGroupBox": {
+    "id": "MainBox",
+    "objectType": "GroupBox",
+    "fields": [
+      {
+        "id": "DetailBox",
+        "objectType": "GroupBox",
+        "gridColumnCount": 1,
+        "fields": [
+          {
+            "id": "NameField",
+            "objectType": "StringField",
+            "label": "${textKey:Name}"
+          },
+          {
+            "id": "GreetButton",
+            "objectType": "Button",
+            "label": "${textKey:Hello}",
+            "processButton": false
+          }
+        ]
+      }
+    ]
+  }
+}
