@@ -7,8 +7,10 @@ import org.eclipse.scout.rt.client.ui.form.AbstractForm;
 import org.eclipse.scout.rt.client.ui.form.fields.button.AbstractButton;
 import org.eclipse.scout.rt.client.ui.form.fields.groupbox.AbstractGroupBox;
 import org.eclipse.scout.rt.client.ui.form.fields.stringfield.AbstractStringField;
+import org.eclipse.scout.rt.client.ui.messagebox.MessageBoxes;
 import org.eclipse.scout.rt.platform.Order;
 import org.eclipse.scout.rt.platform.classid.ClassId;
+import org.eclipse.scout.rt.platform.util.ObjectUtility;
 import org.eclipse.scout.rt.shared.TEXTS;
 
 @ClassId("a932bcb1-5262-452e-b189-4679495c405b")
@@ -53,6 +55,41 @@ public class HelloForm extends AbstractForm {
         return 1;
       }
 
+      @Override
+      protected String getConfiguredCssClass() {
+        return "detail-box";
+      }
+
+      @Override
+      protected boolean getConfiguredFillHorizontal() {
+        return false;
+      }
+
+      @Override
+      protected boolean getConfiguredFillVertical() {
+        return false;
+      }
+
+      @Override
+      protected int getConfiguredHorizontalAlignment() {
+        return 0;
+      }
+
+      @Override
+      protected int getConfiguredVerticalAlignment() {
+        return 0;
+      }
+
+      @Override
+      protected double getConfiguredGridWeightY() {
+        return 1;
+      }
+
+      @Override
+      protected int getConfiguredWidthInPixel() {
+        return 450;
+      }
+
       @Order(1000)
       @ClassId("b192bc02-9b3f-47ad-b1f6-50557b54ee91")
       public class NameField extends AbstractStringField {
@@ -62,8 +99,18 @@ public class HelloForm extends AbstractForm {
         }
 
         @Override
+        protected byte getConfiguredLabelPosition() {
+          return LABEL_POSITION_TOP;
+        }
+
+        @Override
         protected int getConfiguredMaxLength() {
           return 128;
+        }
+
+        @Override
+        protected boolean getConfiguredStatusVisible() {
+          return false;
         }
       }
 
@@ -79,6 +126,22 @@ public class HelloForm extends AbstractForm {
         @Override
         protected boolean getConfiguredProcessButton() {
           return false;
+        }
+
+        @Override
+        protected boolean getConfiguredDefaultButton() {
+          return true;
+        }
+
+        @Override
+        protected String getConfiguredKeyStroke() {
+          return "enter";
+        }
+
+        @Override
+        protected void execClickAction() {
+          String name = ObjectUtility.nvl(getNameField().getValue(), TEXTS.get("stranger"));
+          MessageBoxes.createOk().withBody(TEXTS.get("GreetingMessage", name)).show();
         }
       }
     }

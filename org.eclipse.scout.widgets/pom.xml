@@ -23,7 +23,7 @@
 
   <properties>
     <jdk.source.version>1.7</jdk.source.version>
-    <org.eclipse.scout.rt.version>7.0.100-SNAPSHOT</org.eclipse.scout.rt.version>
+    <org.eclipse.scout.rt.version>7.0.100.017_Oxygen_1</org.eclipse.scout.rt.version>
   </properties>
 
   <groupId>org.eclipse.scout.hellojava</groupId>

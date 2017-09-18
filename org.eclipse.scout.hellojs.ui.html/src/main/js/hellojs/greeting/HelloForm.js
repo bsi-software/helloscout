@@ -16,3 +16,14 @@ scout.inherits(hellojs.HelloForm, scout.Form);
 hellojs.HelloForm.prototype._jsonModel = function() {
   return scout.models.getModel('hellojs.HelloForm');
 };
+
+hellojs.HelloForm.prototype._init = function(model) {
+  hellojs.HelloForm.parent.prototype._init.call(this, model);
+
+  this.widget('GreetButton').on('click', this._onGreetButtonClick.bind(this));
+};
+
+hellojs.HelloForm.prototype._onGreetButtonClick = function(event) {
+  var name = this.widget('NameField').value || this.session.text('stranger');
+  scout.MessageBoxes.openOk(this.session.desktop, this.session.text('GreetingMessage', name));
+};

@@ -10,18 +10,31 @@
       {
         "id": "DetailBox",
         "objectType": "GroupBox",
+        "cssClass": "detail-box",
         "gridColumnCount": 1,
+        "gridDataHints": {
+          "fillHorizontal": false,
+          "fillVertical": false,
+          "horizontalAlignment": 0,
+          "verticalAlignment": 0,
+          "widthInPixel": 450,
+          "weightY": 1
+        },
         "fields": [
           {
             "id": "NameField",
             "objectType": "StringField",
-            "label": "${textKey:Name}"
+            "label": "${textKey:Name}",
+            "labelPosition": 4,
+            "statusVisible": false
           },
           {
             "id": "GreetButton",
             "objectType": "Button",
             "label": "${textKey:Hello}",
-            "processButton": false
+            "processButton": false,
+            "defaultButton": true,
+            "keyStroke": "enter"
           }
         ]
       }
