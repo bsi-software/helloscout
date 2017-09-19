@@ -104,11 +104,6 @@ public class HelloForm extends AbstractForm {
         }
 
         @Override
-        protected int getConfiguredMaxLength() {
-          return 128;
-        }
-
-        @Override
         protected boolean getConfiguredStatusVisible() {
           return false;
         }
