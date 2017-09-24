@@ -186,6 +186,47 @@ hellojs.FlipCard.prototype._renderFlipped = function() {
 <3> Initial rendering of the properties. Applies the state to the DOM.
 <4> Keep the reference tree clean. Reset DOM references when the field has been removed.
 
+HelloForm.json
+[source,json]
+----
+{
+  "id": "hellojs.HelloForm",
+  ...
+  "rootGroupBox": {
+    ...
+    "fields": [
+      {
+        "id": "DetailBox",
+        ...
+        "fields": [
+          {
+            "id": "NameField",
+            ...
+
+          },
+          {  <!--1-->
+            "id": "FlipCard",
+            "objectType": "hellojs.FlipCard",
+            "label": "Flip the card",
+            "frontImage": "res/img/card-back.jpg",
+            "backImage": "res/img/card-front.jpg",
+            "gridDataHints": {
+              "h": 5,
+              "weightY": 0
+            }
+          },
+          {
+            "id": "GreetButton",
+            ...
+          }
+        ]
+      }
+    ]
+  }
+}
+----
+<1> The FlipCard field
+
 FlipCard.less
 [source,css]
 ----
