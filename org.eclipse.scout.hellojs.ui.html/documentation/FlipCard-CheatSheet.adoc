@@ -53,9 +53,10 @@ hellojs.FlipCard.prototype._render = function() {
 
   // create a field
   var $field = this.$parent.appendDiv('content');
-
   // add the field to the form field.
   this.addField($field);
+  this.addMandatoryIndicator();
+  this.addStatus();
 };
 ----
 
@@ -128,15 +129,17 @@ hellojs.FlipCard.prototype._render = function() {
 
   // create a field
   var $field = this.$parent.appendDiv('content');
+  // add the field to the form field.
+  this.addField($field);
+  this.addMandatoryIndicator();
+  this.addStatus();
 
   // create the field content <1>
   this.$card = $field.appendDiv('card')
-    .on('mousedown', this._onCardMouseDown.bind(this));  //<2>
+    .on('mousedown', this._onCardMouseDown.bind(this)); //<2>
   this.$front = this.$card.appendDiv('front');
   this.$back = this.$card.appendDiv('back');
 
-  // add the field to the form field.
-  this.addField($field);
 };
 
 hellojs.FlipCard.prototype._renderProperties = function() { //<3>
