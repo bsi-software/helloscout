@@ -23,20 +23,20 @@
 
   <properties>
     <jdk.source.version>1.7</jdk.source.version>
-    <org.eclipse.scout.rt.version>7.0.100.017_Oxygen_1</org.eclipse.scout.rt.version>
+    <org.eclipse.scout.rt.version>7.0.300.005_Oxygen_3</org.eclipse.scout.rt.version>
   </properties>
 
   <groupId>org.eclipse.scout.hellojava</groupId>
   <artifactId>org.eclipse.scout.hellojava</artifactId>
-  <version>7.0.100-SNAPSHOT</version>
+  <version>7.0.300-SNAPSHOT</version>
   <packaging>pom</packaging>
   <name>HelloJava Application</name>
 
   <modules>
     <module>../org.eclipse.scout.hellojava.client</module>
-    <module>../org.eclipse.scout.hellojava.shared</module>
     <module>../org.eclipse.scout.hellojava.ui.html</module>
     <module>../org.eclipse.scout.hellojava.ui.html.app</module>
+    <module>../org.eclipse.scout.hellojava.ui.html.app.dev</module>
     <module>../org.eclipse.scout.hellojava.ui.html.app.war</module>
   </modules>
 
