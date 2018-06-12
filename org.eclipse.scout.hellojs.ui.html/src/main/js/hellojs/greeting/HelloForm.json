@@ -20,6 +20,9 @@
           "widthInPixel": 450,
           "weightY": 1
         },
+        "bodyLayoutConfig": {
+          "vgap": 25
+        },
         "fields": [
           {
             "id": "NameField",

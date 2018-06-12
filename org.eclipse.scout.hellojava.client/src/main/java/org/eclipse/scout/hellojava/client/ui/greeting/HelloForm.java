@@ -4,14 +4,15 @@ import org.eclipse.scout.hellojava.client.ui.greeting.HelloForm.MainBox.DetailBo
 import org.eclipse.scout.hellojava.client.ui.greeting.HelloForm.MainBox.DetailBox.GreetButton;
 import org.eclipse.scout.hellojava.client.ui.greeting.HelloForm.MainBox.DetailBox.NameField;
 import org.eclipse.scout.rt.client.ui.form.AbstractForm;
+import org.eclipse.scout.rt.client.ui.form.fields.LogicalGridLayoutConfig;
 import org.eclipse.scout.rt.client.ui.form.fields.button.AbstractButton;
 import org.eclipse.scout.rt.client.ui.form.fields.groupbox.AbstractGroupBox;
 import org.eclipse.scout.rt.client.ui.form.fields.stringfield.AbstractStringField;
 import org.eclipse.scout.rt.client.ui.messagebox.MessageBoxes;
 import org.eclipse.scout.rt.platform.Order;
 import org.eclipse.scout.rt.platform.classid.ClassId;
+import org.eclipse.scout.rt.platform.text.TEXTS;
 import org.eclipse.scout.rt.platform.util.ObjectUtility;
-import org.eclipse.scout.rt.shared.TEXTS;
 
 @ClassId("a932bcb1-5262-452e-b189-4679495c405b")
 public class HelloForm extends AbstractForm {
@@ -88,6 +89,12 @@ public class HelloForm extends AbstractForm {
       @Override
       protected int getConfiguredWidthInPixel() {
         return 450;
+      }
+
+      @Override
+      protected LogicalGridLayoutConfig getConfiguredBodyLayoutConfig() {
+        return super.getConfiguredBodyLayoutConfig()
+            .withVGap(25);
       }
 
       @Order(1000)
