@@ -1,6 +1,5 @@
 {
   "id": "hellojs.HelloForm",
-  "type": "model",
   "displayHint": "view",
   "modal": false,
   "rootGroupBox": {
@@ -28,7 +27,7 @@
             "id": "NameField",
             "objectType": "StringField",
             "label": "${textKey:Name}",
-            "labelPosition": 4,
+            "labelPosition": "${const:TOP}",
             "statusVisible": false
           },
           {

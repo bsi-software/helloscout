@@ -8,7 +8,7 @@
  * Contributors:
  *     BSI Business Systems Integration AG - initial API and implementation
  ******************************************************************************/
-package org.eclipse.scout.hellojava.ui.html;
+package org.eclipse.scout.hellojs.ui.html;
 
 import java.io.IOException;
 
@@ -36,7 +36,7 @@ import org.eclipse.scout.rt.server.commons.authentication.TrivialAccessControlle
  *
  * @since 5.1
  */
-public class HelloJavaUiServletFilter implements Filter {
+public class AuthFilter implements Filter {
 
   private TrivialAccessController m_trivialAccessController;
   private FormBasedAccessController m_formBasedAccessController;

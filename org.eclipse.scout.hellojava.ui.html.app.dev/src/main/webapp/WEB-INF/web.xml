@@ -19,7 +19,7 @@
 
   <filter>
     <filter-name>AuthFilter</filter-name>
-    <filter-class>org.eclipse.scout.hellojava.ui.html.HelloJavaUiServletFilter</filter-class>
+    <filter-class>org.eclipse.scout.hellojava.ui.html.AuthFilter</filter-class>
     <init-param>
       <param-name>filter-exclude</param-name>
       <param-value>

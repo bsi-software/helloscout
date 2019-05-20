@@ -131,7 +131,7 @@ public class HelloForm extends AbstractForm {
         }
 
         @Override
-        protected boolean getConfiguredDefaultButton() {
+        protected Boolean getConfiguredDefaultButton() {
           return true;
         }
 

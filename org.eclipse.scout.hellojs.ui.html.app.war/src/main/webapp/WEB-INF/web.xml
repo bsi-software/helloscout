@@ -17,6 +17,32 @@
     <listener-class>org.eclipse.scout.rt.server.commons.HttpSessionMutex</listener-class>
   </listener>
 
+  <filter>
+    <filter-name>AuthFilter</filter-name>
+    <filter-class>org.eclipse.scout.hellojs.ui.html.AuthFilter</filter-class>
+    <init-param>
+      <param-name>filter-exclude</param-name>
+      <param-value>
+        /res/*
+      </param-value>
+    </init-param>
+  </filter>
+
+  <filter>
+    <filter-name>GzipServletFilter</filter-name>
+    <filter-class>org.eclipse.scout.rt.server.commons.servlet.filter.gzip.GzipServletFilter</filter-class>
+  </filter>
+
+  <filter-mapping>
+    <filter-name>AuthFilter</filter-name>
+    <url-pattern>/*</url-pattern>
+  </filter-mapping>
+
+  <filter-mapping>
+    <filter-name>GzipServletFilter</filter-name>
+    <url-pattern>/*</url-pattern>
+  </filter-mapping>
+
   <servlet>
     <servlet-name>UiServlet</servlet-name>
     <servlet-class>org.eclipse.scout.rt.ui.html.UiServlet</servlet-class>
@@ -26,16 +52,6 @@
     <servlet-name>UiServlet</servlet-name>
     <url-pattern>/*</url-pattern>
   </servlet-mapping>
-
-  <filter>
-    <filter-name>GzipServletFilter</filter-name>
-    <filter-class>org.eclipse.scout.rt.server.commons.servlet.filter.gzip.GzipServletFilter</filter-class>
-  </filter>
-
-  <filter-mapping>
-    <filter-name>GzipServletFilter</filter-name>
-    <url-pattern>/*</url-pattern>
-  </filter-mapping>
 
   <session-config>
     <!-- Session timeout in minutes -->
