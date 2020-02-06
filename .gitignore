@@ -20,3 +20,20 @@ classes
 target/
 .surefire-*
 .flattened-pom.xml
+
+# Node #
+node_modules
+
+# Scout #
+dist
+test-results
+
+# IntelliJ IDEA #
+.idea/**/workspace.xml
+.idea/**/tasks.xml
+.idea/**/usage.statistics.xml
+.idea/**/shelf
+.idea/sonarlint
+.idea/**/dataSources/
+.idea/**/dataSources.local.xml
+.idea/httpRequests/

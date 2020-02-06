@@ -1,0 +1,6 @@
+packages:
+  - '.'
+  - 'org.eclipse.scout.hellojava.ui.html'
+  - 'org.eclipse.scout.hellojava.ui.html.app'
+  - 'org.eclipse.scout.hellojs.ui.html'
+  - 'org.eclipse.scout.hellojs.ui.html.app'

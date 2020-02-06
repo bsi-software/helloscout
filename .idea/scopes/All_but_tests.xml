@@ -1,0 +1,3 @@
+<component name="DependencyValidationManager">
+  <scope name="All but tests" pattern="!file[*]:test//*&amp;&amp;!file[*]:src/test//*" />
+</component>

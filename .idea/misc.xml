@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/org.eclipse.scout.hellojava.ui.html.app.dev" />
+    <file type="web" url="file://$PROJECT_DIR$/org.eclipse.scout.hellojava.ui.html.app.war" />
+    <file type="web" url="file://$PROJECT_DIR$/org.eclipse.scout.hellojs.ui.html.app.dev" />
+    <file type="web" url="file://$PROJECT_DIR$/org.eclipse.scout.hellojs.ui.html.app.war" />
+  </component>
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/org.eclipse.scout.hellojs/pom.xml" />
+        <option value="$PROJECT_DIR$/org.eclipse.scout.hellojava/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_12" default="false" project-jdk-name="11" project-jdk-type="JavaSDK" />
+</project>
