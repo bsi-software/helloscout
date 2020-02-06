@@ -1,10 +1,4 @@
-/*!
-* Eclipse Scout Hello Java
-* https://eclipse.org/scout/
-*
-* Copyright (c) BSI Business Systems Integration AG. All rights reserved.
-* Released under the Eclipse Public License v1.0
-* http://www.eclipse.org/legal/epl-v10.html
-*/
-(function(hellojava, scout, $, undefined) {
-}(window.hellojava = window.hellojs || {}, scout, jQuery));
+
+import * as self from './index.js';
+export default self;
+window.hellojava = Object.assign(window.hellojava || {}, self);
