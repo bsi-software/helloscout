@@ -6,6 +6,9 @@
     <file type="web" url="file://$PROJECT_DIR$/org.eclipse.scout.hellojs.ui.html.app.dev" />
     <file type="web" url="file://$PROJECT_DIR$/org.eclipse.scout.hellojs.ui.html.app.war" />
   </component>
+  <component name="JavaScriptSettings">
+    <option name="languageLevel" value="ES6" />
+  </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
