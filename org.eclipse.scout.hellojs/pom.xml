@@ -26,7 +26,7 @@
     <org.eclipse.scout.rt.version>10.0.38</org.eclipse.scout.rt.version>
   </properties>
 
-  <groupId>org.eclipse.scout.hellojs</groupId>
+  <groupId>org.eclipse.scout.helloscout</groupId>
   <artifactId>org.eclipse.scout.hellojs</artifactId>
   <version>10.0.0-SNAPSHOT</version>
   <packaging>pom</packaging>
@@ -52,17 +52,17 @@
 
       <!-- Application dependencies -->
       <dependency>
-        <groupId>org.eclipse.scout.hellojs</groupId>
+        <groupId>org.eclipse.scout.helloscout</groupId>
         <artifactId>org.eclipse.scout.hellojs.ui.html</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.eclipse.scout.hellojs</groupId>
+        <groupId>org.eclipse.scout.helloscout</groupId>
         <artifactId>org.eclipse.scout.hellojs.ui.html.app</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.eclipse.scout.hellojs</groupId>
+        <groupId>org.eclipse.scout.helloscout</groupId>
         <artifactId>org.eclipse.scout.hellojs.ui.html.app.dev</artifactId>
         <version>${project.version}</version>
       </dependency>

@@ -3,6 +3,7 @@
   <component name="CompilerConfiguration">
     <option name="DEFAULT_COMPILER" value="Eclipse" />
     <bytecodeTargetLevel>
+      <module name="helloscout" target="1.5" />
       <module name="org.eclipse.scout.hellojava" target="1.8" />
       <module name="org.eclipse.scout.hellojava.client" target="1.8" />
       <module name="org.eclipse.scout.hellojava.ui.html" target="1.8" />
