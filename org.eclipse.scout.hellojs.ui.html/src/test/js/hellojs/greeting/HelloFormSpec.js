@@ -1,3 +1,5 @@
+import {scout} from '@eclipse-scout/core';
+
 describe('HelloForm', function() {
   var session;
 

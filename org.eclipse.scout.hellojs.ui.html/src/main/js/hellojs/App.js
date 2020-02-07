@@ -1,3 +1,5 @@
+import {App as ScoutApp} from '@eclipse-scout/core';
+
 /*******************************************************************************
  * Copyright (c) 2017 BSI Business Systems Integration AG.
  * All rights reserved. This program and the accompanying materials
@@ -8,7 +10,10 @@
  * Contributors:
  *     BSI Business Systems Integration AG - initial API and implementation
  ******************************************************************************/
-hellojs.App = function() {
-  hellojs.App.parent.call(this);
-};
-scout.inherits(hellojs.App, scout.App);
+export default class App extends ScoutApp {
+
+  constructor() {
+    super();
+  }
+
+}

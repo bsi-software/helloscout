@@ -1,3 +1,6 @@
+import {Form, MessageBoxes, models} from '@eclipse-scout/core';
+import HelloFormModel from './HelloFormModel';
+
 /*******************************************************************************
  * Copyright (c) 2017 BSI Business Systems Integration AG.
  * All rights reserved. This program and the accompanying materials
@@ -8,22 +11,24 @@
  * Contributors:
  *     BSI Business Systems Integration AG - initial API and implementation
  ******************************************************************************/
-hellojs.HelloForm = function() {
-  hellojs.HelloForm.parent.call(this);
-};
-scout.inherits(hellojs.HelloForm, scout.Form);
+export default class HelloForm extends Form {
 
-hellojs.HelloForm.prototype._jsonModel = function() {
-  return scout.models.getModel('hellojs.HelloForm');
-};
+  constructor() {
+    super();
+  }
 
-hellojs.HelloForm.prototype._init = function(model) {
-  hellojs.HelloForm.parent.prototype._init.call(this, model);
+  _jsonModel() {
+    return models.get(HelloFormModel);
+  }
 
-  this.widget('GreetButton').on('click', this._onGreetButtonClick.bind(this));
-};
+  _init(model) {
+    super._init(model);
 
-hellojs.HelloForm.prototype._onGreetButtonClick = function(event) {
-  var name = this.widget('NameField').value || this.session.text('stranger');
-  scout.MessageBoxes.openOk(this.session.desktop, this.session.text('GreetingMessage', name));
-};
+    this.widget('GreetButton').on('click', this._onGreetButtonClick.bind(this));
+  }
+
+  _onGreetButtonClick(event) {
+    var name = this.widget('NameField').value || this.session.text('stranger');
+    MessageBoxes.openOk(this.session.desktop, this.session.text('GreetingMessage', name));
+  }
+}

@@ -1,12 +1,14 @@
-{
-  "id": "hellojs.Desktop",
-  "objectType": "Desktop",
-  "navigationVisible": false,
-  "navigationHandleVisible": false,
-  "headerVisible": false,
-  "views": [
+export default function() {
+  return {
+  id: 'hellojs.Desktop',
+  objectType: 'Desktop',
+  navigationVisible: false,
+  navigationHandleVisible: false,
+  headerVisible: false,
+  views: [
     {
-      "objectType": "hellojs.HelloForm"
+      objectType: 'hellojs.HelloForm'
     }
   ]
+};
 }

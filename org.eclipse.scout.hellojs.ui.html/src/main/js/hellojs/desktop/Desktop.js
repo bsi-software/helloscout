@@ -1,3 +1,6 @@
+import {Desktop as ScoutDesktop, models} from '@eclipse-scout/core';
+import DesktopModel from './DesktopModel';
+
 /*******************************************************************************
  * Copyright (c) 2017 BSI Business Systems Integration AG.
  * All rights reserved. This program and the accompanying materials
@@ -8,11 +11,13 @@
  * Contributors:
  *     BSI Business Systems Integration AG - initial API and implementation
  ******************************************************************************/
-hellojs.Desktop = function() {
-  hellojs.Desktop.parent.call(this);
-};
-scout.inherits(hellojs.Desktop, scout.Desktop);
+export default class Desktop extends ScoutDesktop {
 
-hellojs.Desktop.prototype._jsonModel = function() {
-  return scout.models.getModel('hellojs.Desktop');
-};
+  constructor() {
+    super();
+  }
+
+  _jsonModel() {
+    return models.get(DesktopModel);
+  }
+}
