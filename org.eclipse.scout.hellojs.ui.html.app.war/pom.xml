@@ -10,7 +10,7 @@
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
-    <groupId>org.eclipse.scout.hellojs</groupId>
+    <groupId>org.eclipse.scout.helloscout</groupId>
     <artifactId>org.eclipse.scout.hellojs</artifactId>
     <version>10.0.0-SNAPSHOT</version>
     <relativePath>../org.eclipse.scout.hellojs</relativePath>
@@ -74,7 +74,7 @@
   <dependencies>
     <!-- Application -->
     <dependency>
-      <groupId>org.eclipse.scout.hellojs</groupId>
+      <groupId>org.eclipse.scout.helloscout</groupId>
       <artifactId>org.eclipse.scout.hellojs.ui.html.app</artifactId>
     </dependency>
 
