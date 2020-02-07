@@ -1,5 +1,4 @@
-export default function() {
-  return {
+export default {
   id: 'hellojs.Desktop',
   objectType: 'Desktop',
   navigationVisible: false,
@@ -10,5 +9,5 @@ export default function() {
       objectType: 'hellojs.HelloForm'
     }
   ]
-};
 }
+

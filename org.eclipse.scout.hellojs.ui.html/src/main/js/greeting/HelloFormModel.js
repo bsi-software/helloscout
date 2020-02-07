@@ -1,7 +1,6 @@
 import {FormField} from '@eclipse-scout/core';
 
-export default function() {
-  return {
+export default {
   id: 'hellojs.HelloForm',
   displayHint: 'view',
   modal: false,
@@ -45,5 +44,4 @@ export default function() {
       }
     ]
   }
-};
 }
