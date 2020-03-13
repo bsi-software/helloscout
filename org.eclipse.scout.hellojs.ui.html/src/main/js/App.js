@@ -1,6 +1,4 @@
-import {App as ScoutApp} from '@eclipse-scout/core';
-
-/*******************************************************************************
+/*
  * Copyright (c) 2017 BSI Business Systems Integration AG.
  * All rights reserved. This program and the accompanying materials
  * are made available under the terms of the Eclipse Distribution License v1.0
@@ -9,7 +7,9 @@ import {App as ScoutApp} from '@eclipse-scout/core';
  *
  * Contributors:
  *     BSI Business Systems Integration AG - initial API and implementation
- ******************************************************************************/
+ */
+import {App as ScoutApp} from '@eclipse-scout/core';
+
 export default class App extends ScoutApp {
 
   constructor() {

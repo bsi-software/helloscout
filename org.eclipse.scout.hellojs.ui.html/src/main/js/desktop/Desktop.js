@@ -1,7 +1,4 @@
-import {Desktop as ScoutDesktop, models} from '@eclipse-scout/core';
-import DesktopModel from './DesktopModel';
-
-/*******************************************************************************
+/*
  * Copyright (c) 2017 BSI Business Systems Integration AG.
  * All rights reserved. This program and the accompanying materials
  * are made available under the terms of the Eclipse Distribution License v1.0
@@ -10,7 +7,10 @@ import DesktopModel from './DesktopModel';
  *
  * Contributors:
  *     BSI Business Systems Integration AG - initial API and implementation
- ******************************************************************************/
+ */
+import {Desktop as ScoutDesktop, models} from '@eclipse-scout/core';
+import DesktopModel from './DesktopModel';
+
 export default class Desktop extends ScoutDesktop {
 
   constructor() {

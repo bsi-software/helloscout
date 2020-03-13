@@ -1,7 +1,4 @@
-import {Form, MessageBoxes, models} from '@eclipse-scout/core';
-import HelloFormModel from './HelloFormModel';
-
-/*******************************************************************************
+/*
  * Copyright (c) 2017 BSI Business Systems Integration AG.
  * All rights reserved. This program and the accompanying materials
  * are made available under the terms of the Eclipse Distribution License v1.0
@@ -10,7 +7,10 @@ import HelloFormModel from './HelloFormModel';
  *
  * Contributors:
  *     BSI Business Systems Integration AG - initial API and implementation
- ******************************************************************************/
+ */
+import {Form, MessageBoxes, models} from '@eclipse-scout/core';
+import HelloFormModel from './HelloFormModel';
+
 export default class HelloForm extends Form {
 
   constructor() {
