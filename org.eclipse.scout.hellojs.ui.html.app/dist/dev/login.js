@@ -208,7 +208,7 @@ module.exports = function (module) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _eclipse_scout_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @eclipse-scout/core */ "../node_modules/.pnpm/registry.npmjs.org/@eclipse-scout/core/10.0.3/node_modules/@eclipse-scout/core/src/index.js");
+/* harmony import */ var _eclipse_scout_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @eclipse-scout/core */ "../node_modules/.pnpm/scout.bsiag.com/@eclipse-scout/core/10.0.8/node_modules/@eclipse-scout/core/src/index.js");
 
 new _eclipse_scout_core__WEBPACK_IMPORTED_MODULE_0__["LoginApp"]().init();
 
