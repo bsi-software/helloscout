@@ -33,11 +33,11 @@
     "release-postdependency": "releng-scripts release-publish-dependency"
   },
   "devDependencies": {
-    "@eclipse-scout/cli": "10.0.8",
+    "@eclipse-scout/cli": "10.0.38",
     "@eclipse-scout/releng": "^10.0.0",
-    "@eclipse-scout/testing": "10.0.8"
+    "@eclipse-scout/testing": "10.0.38"
   },
   "dependencies": {
-    "@eclipse-scout/core": "10.0.8"
+    "@eclipse-scout/core": "10.0.38"
   }
 }

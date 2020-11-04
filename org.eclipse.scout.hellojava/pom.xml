@@ -17,13 +17,13 @@
   <parent>
     <groupId>org.eclipse.scout</groupId>
     <artifactId>maven_rt_plugin_config-master</artifactId>
-    <version>3.8.0</version>
+    <version>3.12.7</version>
     <relativePath/>
   </parent>
 
   <properties>
     <jdk.source.version>1.8</jdk.source.version>
-    <org.eclipse.scout.rt.version>10.0.8</org.eclipse.scout.rt.version>
+    <org.eclipse.scout.rt.version>10.0.38</org.eclipse.scout.rt.version>
   </properties>
 
   <groupId>org.eclipse.scout.hellojava</groupId>

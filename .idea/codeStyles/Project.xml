@@ -13,6 +13,9 @@
         <fileSet type="namedScope" name="Excluded from code formatter" pattern="file[archetype-crm]:src/main/resources//*&amp;&amp;!file[archetype-crm]:src/main/resources/META-INF//*||file[com.bsiag.scout.rt.htmleditor.ui.html]:src/main/js/froala//*||file[*]:src/test/resources//*.json||file[*]:src/test/resources/*//*.xml" />
       </list>
     </option>
+    <AsciiDocCodeStyleSettings>
+      <option name="ONE_SENTENCE_PER_LINE" value="false" />
+    </AsciiDocCodeStyleSettings>
     <JSCodeStyleSettings version="1">
       <option name="SPACE_BEFORE_FUNCTION_LEFT_PARENTH" value="false" />
       <option name="USE_DOUBLE_QUOTES" value="false" />
@@ -42,6 +45,24 @@
       </option>
       <option name="JD_PARAM_DESCRIPTION_ON_NEW_LINE" value="true" />
     </JavaCodeStyleSettings>
+    <JetCodeStyleSettings>
+      <option name="PACKAGES_TO_USE_STAR_IMPORTS">
+        <value>
+          <package name="java.util" alias="false" withSubpackages="false" />
+          <package name="kotlinx.android.synthetic" alias="false" withSubpackages="true" />
+          <package name="io.ktor" alias="false" withSubpackages="true" />
+        </value>
+      </option>
+      <option name="PACKAGES_IMPORT_LAYOUT">
+        <value>
+          <package name="" alias="false" withSubpackages="true" />
+          <package name="java" alias="false" withSubpackages="true" />
+          <package name="javax" alias="false" withSubpackages="true" />
+          <package name="kotlin" alias="false" withSubpackages="true" />
+          <package name="" alias="true" withSubpackages="true" />
+        </value>
+      </option>
+    </JetCodeStyleSettings>
     <Properties>
       <option name="KEEP_BLANK_LINES" value="true" />
     </Properties>
@@ -94,6 +115,7 @@
       <option name="ELSE_ON_NEW_LINE" value="true" />
       <option name="CATCH_ON_NEW_LINE" value="true" />
       <option name="FINALLY_ON_NEW_LINE" value="true" />
+      <option name="BINARY_OPERATION_SIGN_ON_NEXT_LINE" value="true" />
       <option name="IF_BRACE_FORCE" value="3" />
       <indentOptions>
         <option name="INDENT_SIZE" value="2" />
