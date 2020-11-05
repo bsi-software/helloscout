@@ -27,6 +27,7 @@ node_modules
 # Scout #
 dist
 test-results
+pnpm-lock.yaml
 
 # IntelliJ IDEA #
 .idea/**/workspace.xml
