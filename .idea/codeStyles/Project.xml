@@ -10,12 +10,15 @@
     <option name="RIGHT_MARGIN" value="240" />
     <option name="DO_NOT_FORMAT">
       <list>
-        <fileSet type="namedScope" name="Excluded from code formatter" pattern="file[archetype-crm]:src/main/resources//*&amp;&amp;!file[archetype-crm]:src/main/resources/META-INF//*||file[com.bsiag.scout.rt.htmleditor.ui.html]:src/main/js/froala//*||file[*]:src/test/resources//*.json||file[*]:src/test/resources/*//*.xml" />
+        <fileSet type="namedScope" name="Excluded from code formatter" pattern="file[*]:src/test/resources//*.json||file[*]:src/test/resources/*//*.xml" />
       </list>
     </option>
     <AsciiDocCodeStyleSettings>
       <option name="ONE_SENTENCE_PER_LINE" value="false" />
     </AsciiDocCodeStyleSettings>
+    <HTMLCodeStyleSettings>
+      <option name="HTML_DO_NOT_INDENT_CHILDREN_OF" value="thead,tbody,tfoot" />
+    </HTMLCodeStyleSettings>
     <JSCodeStyleSettings version="1">
       <option name="SPACE_BEFORE_FUNCTION_LEFT_PARENTH" value="false" />
       <option name="USE_DOUBLE_QUOTES" value="false" />

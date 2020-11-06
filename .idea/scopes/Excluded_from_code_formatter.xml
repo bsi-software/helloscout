@@ -1,0 +1,3 @@
+<component name="DependencyValidationManager">
+  <scope name="Excluded from code formatter" pattern="file[*]:src/test/resources//*.json||file[*]:src/test/resources/*//*.xml" />
+</component>
