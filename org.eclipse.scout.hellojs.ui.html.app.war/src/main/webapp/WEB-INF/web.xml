@@ -26,11 +26,12 @@
         /favicon/*
         /fonts/*
         /logo.png
-        /jquery*.js
-        /login*.js
-        /logout*.js
-        /hellojs-theme*.css
-        /eclipse-scout*.js
+        /*login*.js
+        /*login*.js.map
+        /*logout*.js
+        /*logout*.js.map
+        /*hellojs-theme*.css
+        /*hellojs-theme*.css.map
       </param-value>
     </init-param>
   </filter>

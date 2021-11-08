@@ -1,10 +1,10 @@
 import {scout} from '@eclipse-scout/core';
 import {HelloForm} from '../../../main/js/index';
 
-describe('HelloForm', function() {
-  var session;
+describe('HelloForm', () => {
+  let session;
 
-  beforeEach(function() {
+  beforeEach(() => {
     setFixtures(sandbox());
     session = sandboxSession({
       desktop: {
@@ -16,15 +16,15 @@ describe('HelloForm', function() {
     session.textMap.add('GreetingMessage', 'Hello {0}, nice to meet you!');
   });
 
-  describe('open', function() {
+  describe('open', () => {
 
-    it('shows an empty string field', function(done) {
+    it('shows an empty string field', done => {
       /** @type {HelloForm} */
-      var form = scout.create('hellojs.HelloForm', {
+      let form = scout.create('hellojs.HelloForm', {
         parent: session.desktop
       });
       form.open()
-        .then(function() {
+        .then(() => {
           expect(form.widget('NameField').rendered).toBe(true);
           expect(form.widget('NameField').value).toBe(null);
           form.close();
@@ -34,18 +34,18 @@ describe('HelloForm', function() {
     });
   });
 
-  describe('greeting button click', function() {
+  describe('greeting button click', () => {
 
-    it('shows a message box with the text of the string field', function(done) {
+    it('shows a message box with the text of the string field', done => {
       /** @type {HelloForm} */
-      var form = scout.create('hellojs.HelloForm', {
+      let form = scout.create('hellojs.HelloForm', {
         parent: session.desktop
       });
       form.open()
-        .then(function() {
+        .then(() => {
           form.widget('NameField').setValue('Luke');
           form.widget('GreetButton').doAction();
-          var messageBox = session.desktop.messageBoxes[0];
+          let messageBox = session.desktop.messageBoxes[0];
           expect(form.widget('NameField').value).toBe('Luke');
           expect(messageBox.body).toContain('Luke');
           messageBox.close();

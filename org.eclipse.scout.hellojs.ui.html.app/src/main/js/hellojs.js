@@ -1,6 +1,6 @@
 import {App} from '@eclipse-scout/hellojs-core';
 
-var app = new App();
+let app = new App();
 app.init({
   bootstrap: {
     textsUrl: 'texts.json'

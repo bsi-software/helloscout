@@ -28,7 +28,7 @@ export default class HelloForm extends Form {
   }
 
   _onGreetButtonClick(event) {
-    var name = this.widget('NameField').value || this.session.text('stranger');
+    let name = this.widget('NameField').value || this.session.text('stranger');
     MessageBoxes.openOk(this.session.desktop, this.session.text('GreetingMessage', name));
   }
 }

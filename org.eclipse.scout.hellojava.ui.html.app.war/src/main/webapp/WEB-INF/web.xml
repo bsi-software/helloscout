@@ -38,11 +38,12 @@
         /favicon/*
         /fonts/*
         /logo.png
-        /jquery*.js
-        /login*.js
-        /logout*.js
-        /hellojava-theme*.css
-        /eclipse-scout*.js
+        /*login*.js
+        /*login*.js.map
+        /*logout*.js
+        /*logout*.js.map
+        /*hellojava-theme*.css
+        /*hellojava-theme*.css.map
       </param-value>
     </init-param>
   </filter>
