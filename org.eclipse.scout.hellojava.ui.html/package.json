@@ -8,9 +8,9 @@
   },
   "license": "EPL-1.0",
   "engines": {
-    "node": ">=12.1.0",
-    "npm": ">=6.9.0",
-    "pnpm": ">=4"
+    "node": ">=18.12.1",
+    "npm": ">=9.1.1",
+    "pnpm": ">=7.16.0"
   },
   "main": "./src/main/js/index.js",
   "files": [
@@ -33,10 +33,10 @@
     "release-postdependency": "releng-scripts release-publish-dependency"
   },
   "devDependencies": {
-    "@eclipse-scout/cli": "11.0.38",
-    "@eclipse-scout/releng": "^10.0.0"
+    "@eclipse-scout/cli": "23.2.4",
+    "@eclipse-scout/releng": "^22.0.2"
   },
   "dependencies": {
-    "@eclipse-scout/core": "11.0.38"
+    "@eclipse-scout/core": "23.2.4"
   }
 }

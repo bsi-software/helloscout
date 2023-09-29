@@ -1,3 +1,4 @@
 import * as self from './index.js';
+import {ObjectFactory} from '@eclipse-scout/core';
 export default self;
-window.hellojava = Object.assign(window.hellojava || {}, self);
+ObjectFactory.get().registerNamespace('hellojava', self);

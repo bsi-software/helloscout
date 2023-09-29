@@ -6,9 +6,7 @@
     "pnpm-install": "pnpm install"
   },
   "dependencies": {
-    "eslint": "7.9.0",
-    "babel-eslint": "10.1.0",
-    "eslint-plugin-babel": "5.3.1",
-    "@eclipse-scout/eslint-config": "11.0.38"
+    "eslint": "8.27.0",
+    "@eclipse-scout/eslint-config": "23.2.4"
   }
 }

@@ -23,7 +23,7 @@
 
   <properties>
     <jdk.source.version>1.8</jdk.source.version>
-    <org.eclipse.scout.rt.version>11.0.38</org.eclipse.scout.rt.version>
+    <org.eclipse.scout.rt.version>23.2.4</org.eclipse.scout.rt.version>
   </properties>
 
   <groupId>org.eclipse.scout.helloscout</groupId>

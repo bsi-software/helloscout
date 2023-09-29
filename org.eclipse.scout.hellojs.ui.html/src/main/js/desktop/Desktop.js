@@ -13,11 +13,24 @@ import DesktopModel from './DesktopModel';
 
 export default class Desktop extends ScoutDesktop {
 
-  constructor() {
-    super();
-  }
-
   _jsonModel() {
     return models.get(DesktopModel);
+  }
+
+  _init(model) {
+    super._init(model);
+    this.widget('OpenFormsMenu').on('action', () => {
+      for (let i = 0; i < 100; i++) {
+        let f = scout.create('Form', {
+          parent: this,
+          displayHint: 'view',
+          title: 'a',
+          rootGroupBox: {
+            objectType: 'GroupBox'
+          }
+        });
+        f.open();
+      }
+    });
   }
 }

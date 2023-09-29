@@ -3,10 +3,11 @@ export default () => ({
   objectType: 'Desktop',
   navigationVisible: false,
   navigationHandleVisible: false,
-  headerVisible: false,
-  views: [
+  menus: [
     {
-      objectType: 'hellojs.HelloForm'
+      id: 'OpenFormsMenu',
+      objectType: 'Menu',
+      text: 'Open Forms'
     }
   ]
 });
