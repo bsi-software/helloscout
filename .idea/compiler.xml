@@ -1,21 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CompilerConfiguration">
-    <option name="DEFAULT_COMPILER" value="Eclipse" />
-    <bytecodeTargetLevel>
-      <module name="helloscout" target="1.5" />
-      <module name="org.eclipse.scout.hellojava" target="1.8" />
-      <module name="org.eclipse.scout.hellojava.client" target="1.8" />
-      <module name="org.eclipse.scout.hellojava.ui.html" target="1.8" />
-      <module name="org.eclipse.scout.hellojava.ui.html.app" target="1.8" />
-      <module name="org.eclipse.scout.hellojava.ui.html.app.dev" target="1.8" />
-      <module name="org.eclipse.scout.hellojava.ui.html.app.war" target="1.8" />
-      <module name="org.eclipse.scout.hellojs" target="1.8" />
-      <module name="org.eclipse.scout.hellojs.ui.html" target="1.8" />
-      <module name="org.eclipse.scout.hellojs.ui.html.app" target="1.8" />
-      <module name="org.eclipse.scout.hellojs.ui.html.app.dev" target="1.8" />
-      <module name="org.eclipse.scout.hellojs.ui.html.app.war" target="1.8" />
-    </bytecodeTargetLevel>
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+      </profile>
+    </annotationProcessing>
   </component>
   <component name="EclipseCompilerSettings">
     <option name="GENERATE_NO_WARNINGS" value="true" />

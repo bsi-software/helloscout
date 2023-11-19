@@ -10,10 +10,6 @@
  */
 import {App as ScoutApp} from '@eclipse-scout/core';
 
-export default class App extends ScoutApp {
-
-  constructor() {
-    super();
-  }
+export class App extends ScoutApp {
 
 }

@@ -2,14 +2,19 @@
 <project version="4">
   <component name="RemoteRepositoriesConfiguration">
     <remote-repository>
-      <option name="id" value="eclipse.snapshot" />
-      <option name="name" value="eclipse-snapshot-repo" />
-      <option name="url" value="https://repo.eclipse.org/content/groups/snapshots/" />
-    </remote-repository>
-    <remote-repository>
       <option name="id" value="central" />
       <option name="name" value="Central Repository" />
       <option name="url" value="https://repo.maven.apache.org/maven2" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="bsiag.libs.release" />
+      <option name="name" value="scout-libs-release" />
+      <option name="url" value="https://scout.bsiag.com/repository/crm-libs-release" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="bsiag.libs.snapshots" />
+      <option name="name" value="scout-libs-snapshot" />
+      <option name="url" value="https://scout.bsiag.com/repository/crm-libs-snapshot" />
     </remote-repository>
     <remote-repository>
       <option name="id" value="central" />
@@ -20,6 +25,16 @@
       <option name="id" value="jboss.community" />
       <option name="name" value="JBoss Community repository" />
       <option name="url" value="https://repository.jboss.org/nexus/content/repositories/public/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="central" />
+      <option name="name" value="Central Repository" />
+      <option name="url" value="https://scout.bsiag.com/repository/remote-repos" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="eclipse.snapshot" />
+      <option name="name" value="eclipse-snapshot-repo" />
+      <option name="url" value="https://repo.eclipse.org/content/groups/snapshots/" />
     </remote-repository>
   </component>
 </project>

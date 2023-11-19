@@ -1,16 +1,14 @@
-import {FormField} from '@eclipse-scout/core';
+import {Button, Form, FormField, FormModel, GroupBox, StringField} from '@eclipse-scout/core';
 
-export default () => ({
-  id: 'hellojs.HelloForm',
-  displayHint: 'view',
-  modal: false,
+export default (): FormModel => ({
+  displayHint: Form.DisplayHint.VIEW,
   rootGroupBox: {
     id: 'MainBox',
-    objectType: 'GroupBox',
+    objectType: GroupBox,
     fields: [
       {
         id: 'DetailBox',
-        objectType: 'GroupBox',
+        objectType: GroupBox,
         cssClass: 'detail-box',
         gridColumnCount: 1,
         gridDataHints: {
@@ -27,14 +25,14 @@ export default () => ({
         fields: [
           {
             id: 'NameField',
-            objectType: 'StringField',
+            objectType: StringField,
             label: '${textKey:Name}',
             labelPosition: FormField.LabelPosition.TOP,
             statusVisible: false
           },
           {
             id: 'GreetButton',
-            objectType: 'Button',
+            objectType: Button,
             label: '${textKey:Hello}',
             processButton: false,
             defaultButton: true,
@@ -45,3 +43,14 @@ export default () => ({
     ]
   }
 });
+
+/* **************************************************************************
+* GENERATED WIDGET MAPS
+* **************************************************************************/
+
+export type HelloFormWidgetMap = {
+  'MainBox': GroupBox;
+  'DetailBox': GroupBox;
+  'NameField': StringField;
+  'GreetButton': Button;
+};

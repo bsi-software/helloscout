@@ -8,16 +8,12 @@
  * Contributors:
  *     BSI Business Systems Integration AG - initial API and implementation
  */
-import {Desktop as ScoutDesktop, models} from '@eclipse-scout/core';
+import {Desktop as ScoutDesktop} from '@eclipse-scout/core';
 import DesktopModel from './DesktopModel';
 
-export default class Desktop extends ScoutDesktop {
+export class Desktop extends ScoutDesktop {
 
-  constructor() {
-    super();
-  }
-
-  _jsonModel() {
-    return models.get(DesktopModel);
+  protected override _jsonModel() {
+    return DesktopModel();
   }
 }

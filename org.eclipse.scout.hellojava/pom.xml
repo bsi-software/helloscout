@@ -17,18 +17,18 @@
   <parent>
     <groupId>org.eclipse.scout</groupId>
     <artifactId>maven_rt_plugin_config-master</artifactId>
-    <version>3.14.2</version>
+    <version>23.2.0</version>
     <relativePath/>
   </parent>
 
   <properties>
-    <jdk.source.version>1.8</jdk.source.version>
-    <org.eclipse.scout.rt.version>11.0.38</org.eclipse.scout.rt.version>
+    <jdk.source.version>11</jdk.source.version>
+    <org.eclipse.scout.rt.version>23.2.11</org.eclipse.scout.rt.version>
   </properties>
 
   <groupId>org.eclipse.scout.helloscout</groupId>
   <artifactId>org.eclipse.scout.hellojava</artifactId>
-  <version>11.0.0-SNAPSHOT</version>
+  <version>23.2.0-SNAPSHOT</version>
   <packaging>pom</packaging>
   <name>HelloJava Application</name>
 

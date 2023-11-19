@@ -8,26 +8,24 @@
  * Contributors:
  *     BSI Business Systems Integration AG - initial API and implementation
  */
-import {Form, MessageBoxes, models} from '@eclipse-scout/core';
-import HelloFormModel from './HelloFormModel';
+import {Button, Event, Form, InitModelOf, MessageBoxes} from '@eclipse-scout/core';
+import HelloFormModel, {HelloFormWidgetMap} from './HelloFormModel';
 
-export default class HelloForm extends Form {
+export class HelloForm extends Form {
 
-  constructor() {
-    super();
+  declare widgetMap: HelloFormWidgetMap;
+
+  protected override _jsonModel() {
+    return HelloFormModel();
   }
 
-  _jsonModel() {
-    return models.get(HelloFormModel);
-  }
-
-  _init(model) {
+  protected override _init(model: InitModelOf<this>) {
     super._init(model);
 
     this.widget('GreetButton').on('click', this._onGreetButtonClick.bind(this));
   }
 
-  _onGreetButtonClick(event) {
+  protected _onGreetButtonClick(event: Event<Button>) {
     let name = this.widget('NameField').value || this.session.text('stranger');
     MessageBoxes.openOk(this.session.desktop, this.session.text('GreetingMessage', name));
   }

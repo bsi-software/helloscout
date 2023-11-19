@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="Encoding">
+  <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8">
     <file url="file://$PROJECT_DIR$/org.eclipse.scout.hellojava" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/org.eclipse.scout.hellojava.client" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/org.eclipse.scout.hellojava.client/src/main/java" charset="UTF-8" />
@@ -8,22 +8,32 @@
     <file url="file://$PROJECT_DIR$/org.eclipse.scout.hellojava.ui.html" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/org.eclipse.scout.hellojava.ui.html.app" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/org.eclipse.scout.hellojava.ui.html.app.dev" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/org.eclipse.scout.hellojava.ui.html.app.dev/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/org.eclipse.scout.hellojava.ui.html.app.dev/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/org.eclipse.scout.hellojava.ui.html.app.war" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/org.eclipse.scout.hellojava.ui.html.app.war/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/org.eclipse.scout.hellojava.ui.html.app.war/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/org.eclipse.scout.hellojava.ui.html.app/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/org.eclipse.scout.hellojava.ui.html.app/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/org.eclipse.scout.hellojava.ui.html/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/org.eclipse.scout.hellojava.ui.html/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/org.eclipse.scout.hellojava/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/org.eclipse.scout.hellojava/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/org.eclipse.scout.hellojs" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/org.eclipse.scout.hellojs.ui.html" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/org.eclipse.scout.hellojs.ui.html.app" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/org.eclipse.scout.hellojs.ui.html.app.dev" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/org.eclipse.scout.hellojs.ui.html.app.dev/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/org.eclipse.scout.hellojs.ui.html.app.dev/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/org.eclipse.scout.hellojs.ui.html.app.war" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/org.eclipse.scout.hellojs.ui.html.app.war/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/org.eclipse.scout.hellojs.ui.html.app.war/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/org.eclipse.scout.hellojs.ui.html.app.war/src/main/resources/config.properties" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/org.eclipse.scout.hellojs.ui.html.app/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/org.eclipse.scout.hellojs.ui.html.app/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/org.eclipse.scout.hellojs.ui.html/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/org.eclipse.scout.hellojs.ui.html/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/org.eclipse.scout.hellojs/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/org.eclipse.scout.hellojs/src/main/resources" charset="UTF-8" />
   </component>
 </project>

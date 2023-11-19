@@ -5,11 +5,13 @@
 * Released under the Eclipse Distribution License v1.0
 * http://www.eclipse.org/org/documents/edl-v10.html
 */
-export {default as App} from './App';
-export {default as Desktop} from './desktop/Desktop';
-export {default as HelloForm} from './greeting/HelloForm';
+import {ObjectFactory} from '@eclipse-scout/core';
+
+export * from './App';
+export * from './desktop/Desktop';
+export * from './greeting/HelloForm';
 export * from './objectFactories';
 
-import * as self from './index.js';
+import * as self from './index';
 export default self;
-window.hellojs = Object.assign(window.hellojs || {}, self);
+ObjectFactory.get().registerNamespace('hellojs', self);

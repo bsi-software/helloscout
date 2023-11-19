@@ -6,9 +6,9 @@ module.exports = (env, args) => {
   const config = baseConfig(env, args);
 
   config.entry = {
-    'hellojava': './src/main/js/hellojava.js',
-    'login': './src/main/js/login.js',
-    'logout': './src/main/js/logout.js',
+    'hellojava': './src/main/js/hellojava.ts',
+    'login': './src/main/js/login.ts',
+    'logout': './src/main/js/logout.ts',
     'hellojava-theme': './src/main/js/hellojava-theme.less'
   };
 
